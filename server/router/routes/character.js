@@ -17,9 +17,9 @@ const mock = {
       con: 12,
       int: 13,
       wis: 14,
-      cha: 15,
-      asi: {}
+      cha: 15
     },
+    asi: [],
     skills: {
       Acrobatics: 0,
       Animal_Handling: 0,
@@ -52,6 +52,7 @@ const mock = {
     bag: [],
   },
   spells: {
+    slots: [],
     prepared: [],
     known: []
   }

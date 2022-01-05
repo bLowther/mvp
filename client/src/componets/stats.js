@@ -10,7 +10,7 @@ const Stats = ({stats}) => {
   return (
     <Container>
       <Row>
-        <Abilities abilities={stats.abilities}/>
+        <Abilities abilities={stats.abilities} asi={stats.asi}/>
         <Profs proficiencies={stats.proficiencies}/>
         <Skills skills={stats.skills}/>
       </Row>
