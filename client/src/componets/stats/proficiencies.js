@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-const Inventory = props => {
+const Profs = ({armor, weapons, tools, languages}) => {
 
   return (
     <Container>
@@ -12,4 +12,4 @@ const Inventory = props => {
 
 }
 
-export default Inventory;
+export default Profs;
