@@ -18,12 +18,12 @@ const cardStyle = {
 }
 
 const abStyle = {
-  fontSize: "1.4vw",
+  fontSize: "1.2vw",
   margin: "5%"
 }
 
 const scoreStyle = {
-  fontSize: "1.8vw",
+  fontSize: "1.6vw",
   marginBottom: "5%"
 }
 
