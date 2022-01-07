@@ -11,6 +11,8 @@ const gridStyle= {
 const cardStyle = {
   maxWidth: "90px",
   maxHeight: "110px",
+  minWidth: "64px",
+  minHeight: "81px",
   textAlign: "center",
   flexDirection: "column",
   flexWrap: "nowrap",
@@ -18,12 +20,12 @@ const cardStyle = {
 }
 
 const abStyle = {
-  fontSize: "1.2vw",
+  fontSize: "12px",
   margin: "5%"
 }
 
 const scoreStyle = {
-  fontSize: "1.6vw",
+  fontSize: "18px",
   marginBottom: "5%"
 }
 
@@ -35,7 +37,7 @@ const Abilities = ({abilities, asi}) => {
         {scores.map(score => (
           <Col style={gridStyle} key ={score}>
             <Card style={cardStyle}>
-              <Card.Img src="https://i.dlpng.com/static/png/6688721_preview.png" alt={`${score}`} />
+              <Card.Img src="https://i.dlpng.com/static/png/6688721_preview.png" />
               <Card.ImgOverlay>
                 <Card.Text style={abStyle}><b>{score.toUpperCase()}</b></Card.Text>
                 <Card.Title style={scoreStyle}>{abilities[score]}</Card.Title>

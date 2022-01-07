@@ -38,7 +38,7 @@ function App() {
 
   return (
     <Container>
-      <Stats stats={stats} info={info}/>
+      <Stats stats={stats} info={info} setInfo={setInfo}/>
       <Inventory equipment={equipment} spells={spells}/>
     </Container>
   );

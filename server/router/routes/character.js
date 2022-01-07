@@ -5,11 +5,19 @@ const url = require('../../config.js').api_url
 const router = express.Router();
 
 const mock = {
-  name: 'test character',
+  user: 'test',
   password: 'password',
-  background: 'Acolyte',
+  info: {
+    name: 'test character',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77o2AhtNObLLnWPYuAxAAf_Q8L7ZaJLVSyA&usqp=CAU',
+    background: 'Acolyte',
+    race: 'Human',
+    currentHP: 3,
+    maxHP: 7,
+    tempHP: 1
+  },
   stats: {
-    race: 'human',
+    raceAtributes: {1: ['str', 'dex', 'con', 'int', 'wis', 'cha'], 2: []},
     class: {'warlock': {level: 1, subclass: null}},
     abilities: {
       str: 8,
@@ -40,7 +48,7 @@ const mock = {
       Stealth: 0,
       Survival: 0
     },
-    proficiencies: {
+    profs: {
       armor: ['Light Armor'],
       weapons: ['Simple Weapons'],
       tools: [],

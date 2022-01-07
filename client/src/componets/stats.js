@@ -7,12 +7,12 @@ import Profs from './stats/proficiencies.js';
 import Skills from './stats/skills.js';
 import Profile from './stats/profile.js';
 
-const Stats = ({stats, info}) => {
+const Stats = ({stats, info, setInfo}) => {
 
   return (
     <Container>
       <Row>
-        <Col><Profile info={info} /></Col>
+        <Col><Profile info={info} setInfo={setInfo}/></Col>
         <Col><Abilities abilities={stats.abilities} asi={stats.asi}/></Col>
         {/* <Col><Profs proficiencies={stats.proficiencies}/></Col>
         <Col><Skills skills={stats.skills}/></Col> */}
