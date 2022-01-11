@@ -13,7 +13,7 @@ const Stats = ({stats, info, setInfo}) => {
     <Container>
       <Row>
         <Col><Profile info={info} setInfo={setInfo}/></Col>
-        <Col><Abilities abilities={stats.abilities} asi={stats.asi}/></Col>
+        <Col><Abilities abilities={stats.abilities} raceAtributes={stats.raceAtributes} asi={stats.asi}/></Col>
         {/* <Col><Profs proficiencies={stats.proficiencies}/></Col>
         <Col><Skills skills={stats.skills}/></Col> */}
       </Row>

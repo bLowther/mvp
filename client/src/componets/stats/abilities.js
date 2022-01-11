@@ -29,7 +29,7 @@ const scoreStyle = {
   marginBottom: "5%"
 }
 
-const Abilities = ({abilities, asi}) => {
+const Abilities = ({abilities, raceAtributes, asi}) => {
   const scores = Object.keys(abilities)
   return (
     <Container>
